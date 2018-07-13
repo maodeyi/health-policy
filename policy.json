@@ -1,0 +1,36 @@
+{
+        "console": {
+                "host": "10.34.0.138", 
+                "port": "8087"
+        }, 
+        "policy": [
+                {
+                        "namespace": {
+                                "name": "monitoring", 
+                                "pod": [
+                                        {
+                                                "name": "prometheus", 
+                                                "running_num": 2
+                                        },
+					{
+                                                "name": "node",
+                                                "running_num": 3
+                                        } 
+                                ]
+                        },
+			"namespace": {
+                                "name": "logging",
+                                "pod": [
+                                        {
+                                                "name": "fluentd",
+                                                "running_num": 4
+                                        },
+                                        {
+                                                "name": "curator",
+                                                "running_num": 2
+                                        }
+                                ]
+                        }
+                } 
+        ]
+}
