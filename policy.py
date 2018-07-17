@@ -35,7 +35,7 @@ def cluster_status():
 				return "excetipn"
 			if response.status == 200 :
 				print(200)
-				data = json.loads(response.read())
+				data = json.loads(bytes.decode(response.read()))
 				print(data)
 				if data == "":
 					return 'unhealth'				
