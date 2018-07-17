@@ -14,7 +14,7 @@ def get_pods_status(host, port, namespace):
 		print(port)
 		print(namespace)
 		conn = http.client.HTTPConnection(host, port)
-		conn.request("GET", "/kubernetes/pods?namespace=" + namespace)
+		conn.request("GET", "/v1/kubernetes/pods?namespace=" + namespace)
 		response = conn.getresponse()
 		return response
 	except Exception:
