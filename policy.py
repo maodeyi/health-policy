@@ -1,5 +1,6 @@
 import json
 import http.client
+import re
 from flask import Flask
 app = Flask(__name__)
 
@@ -43,7 +44,8 @@ def cluster_status():
 					for index in range(len(data['pods'])):
 						if policy['policy'][index_policy]['namespace']['pod'][index_policy_pod]['running_num'] <= 0:
 							break
-						if data['pods'][index]['name'].startswith(policy['policy'][index_policy]['namespace']['pod'][index_policy_pod]['name']):
+						rule = re.compile(policy['policy'][index_policy]['namespace']['pod'][index_policy_pod]['name'])
+						if re.match(rule, data['pods'][index]['name']) != None:
 							if data['pods'][index]['status'] == "Running" :
 								policy['policy'][index_policy]['namespace']['pod'][index_policy_pod]['running_num']-=1
 			
