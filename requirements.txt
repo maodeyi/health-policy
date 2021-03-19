@@ -17,7 +17,7 @@ Flask==0.10.1
 iniparse==0.4
 IPy==0.75
 itsdangerous==0.23
-Jinja2==2.7.2
+Jinja2==2.11.3
 jsonpatch==1.2
 jsonpointer==1.9
 kitchen==1.1.1
