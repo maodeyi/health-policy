@@ -46,7 +46,7 @@ rados==2.0.0
 rbd==2.0.0
 requests==2.6.0
 rgw==2.0.0
-rsa==3.4.1
+rsa==4.7
 schedutils==0.4
 seobject==0.1
 sepolicy==1.1
