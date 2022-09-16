@@ -21,7 +21,7 @@ Jinja2==2.7.2
 jsonpatch==1.2
 jsonpointer==1.9
 kitchen==1.1.1
-Mako==0.8.1
+Mako==1.2.2
 Markdown==2.4.1
 MarkupSafe==0.11
 Paste==1.7.5.1
