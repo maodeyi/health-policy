@@ -27,7 +27,7 @@ MarkupSafe==0.11
 Paste==1.7.5.1
 pecan==0.4.5
 perf==0.1
-Pillow==2.0.0
+Pillow==9.3.0
 policycoreutils-default-encoding==0.1
 prettytable==0.7.2
 pyasn1==0.1.9
